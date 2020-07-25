@@ -1,5 +1,6 @@
 import Person from './Person';
 import Team from './Team';
+import canIterate from './canIterate';
 
 const player1 = new Person({
   name: 'Арагорн',
@@ -37,3 +38,10 @@ newTeam.add(player3);
 for (const player of newTeam) {
   console.log(player);
 }
+
+// advanced task *
+console.log(canIterate(new Map()));
+console.log(canIterate(new Set()));
+console.log(canIterate(null));
+console.log(canIterate(10));
+console.log(canIterate('Netology'));
